@@ -11,33 +11,67 @@
     <meta property="og:type" content="Online Porfolio website">
     <title>Home</title>
 
+    <script type="module">
+        import { initialise } from "./Javascript/navMenu.js";
+        initialise("Home");
+    </script> 
 </head>
+
+<main>
 <body>
-   <body>
     <header>
         <img class = "logo" src = "Images/MataLogo.PNG" alt = "logo">
-        <!-- <nav>
+        <nav>
             
-        </nav> -->
+        </nav>
     </header>
 
     <section class="home-info">
-        <h1>WELCOME TO MY WEBSITE</h1>
-        <p></p>
-        <p>"There are three responses to a piece of design - yes, no, and WOW! WOW is the one to aim for." - Milton Glaser</p>
-    
-        <figure>
-            <img src="Images/Character1.PNG" alt="Picture of myself in a blue hoodie" width="500" height="600">
-        </figure> 
+        <div class = "greeting-intro">
+            <h1>Hi, my name is Matalame Mamabolo</h1>
+        </div>
+
+        <div class = "introduction">
+            <p>Projects</p>
+            <h2>Welcome to my portfolio. Here you’ll find selected projects that reflect my approach to design and problem-solving.</h2>
+            <button> View All Projects</button>
+        </div>
     </section>
 
-    <main>
-        
-    </main>
+    <section class = "project-banners">
+        <div class = "banner-container">
+            <img src = "">
+            <h3>Fruits Corp</h3>
+            <p> An e-commerce platform helping users select fruit-based diet plans with credible content and guidance. Includes a D3.js visualization to show weight trends and support informed choices.</p>
+            <button> View Project</button>
+        </div>
+
+        <div class = "banner-container">
+            <img src = "">
+            <h3> Raw Games</h3>
+            <p> An e-commerce platform for gamers to explore and purchase titles with real API data and simulated pricing. Features filters to personalize browsing and make game discovery intuitive.</p>
+            <button> View Project</button>
+        </div>
+
+        <div class = "banner-container">
+            <img src = "">
+            <h3> Student Hustle</h3>
+            <p> A React-based web application connecting university and college students with flexible, short-term job opportunities. Designed for the South African context, the platform supports student income while helping clients find reliable assistance.</p>
+            <button> View Project</button>
+        </div>
+
+        <div class = "banner-container">
+            <img src = "">
+            <h3> More Projects</h3>
+            <p> Here is a selection of additional projects that highlight my UI/UX design approach, problem-solving skills, and attention to creating intuitive, user-centered experiences.</p>
+            <button> View Project</button>
+        </div>
+    </section>
 
     <footer> 
         <p> Brought to you by Matalame Mamabolo</p>
     </footer> 
+</main>
   
 </body>
 </html>
