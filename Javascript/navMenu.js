@@ -1,11 +1,10 @@
-const root = "/Matalame";
+const root = window.location.origin;
 
 const menuItems = [
     { name: "Home", href: root + "/index.html"},
-    { name: "Unlock", href: `${root}/Unlock/index.html` },
-    { name: "Pricing", href: `${root}/Pricing/index.html` },
-    { name: "Design", href: `${root}/Design/index.html` },
-    { name: "Explore", href: `${root}/Explore/newIndex.html` },
+    { name: "Projects", href: `${root}/ProjectMenu/index.html` },
+    { name: "Resume", href: `${root}/Resume/index.html` },
+    { name: "Contact", href: `${root}/Contact/index.html` },
 ];
 
 
