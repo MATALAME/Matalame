@@ -36,25 +36,19 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(134, 179, 253, 0.3);
-}
-
 .standard-btn {
+    border: none;
     color: #ffffff;
     padding: 10px 16px; 
     border-radius: 400px; 
     background-color: #004AAD;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     cursor: pointer;
-    display: inline-flex;
     align-items: center;
     gap: 8px;
-
-    /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .arrow-circle {
@@ -66,12 +60,14 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 15px;
+
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .cta-btn:hover, .standard-btn:hover {
-    transform: translateX(3px);
-    
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(134, 179, 253, 0.3);
 }
+
 
 
