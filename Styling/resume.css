@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #F4F4F4;
+    padding-inline: clamp(16px, 6vw, 90px);
+}
+
+.about-me p{
+    max-width: 65%;
+}
+.about-me h2, .education h2, .interests h2, .tools h2, .design-dev h2, .personal-skills h2 {
+    color: #004AAD;
+    border: 2px solid #004AAD;
+    border-radius: 30px;
+    padding: 8px 16px; 
+    display: inline-block; 
+    font-weight: 500;
+    font-size: 16px;
+}
