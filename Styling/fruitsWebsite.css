@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg-main: #F4F4F4;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F8FAFC;
+
+    --text-main: #111827;
+    --text-muted: #6B7280;
+    --text-light: #9CA3AF;
+
+    --accent: #004AAD;
+
+    --border-light: #E5E7EB;
+    --border-subtle: #EEF2F7;
+
+    --radius-xl: 20px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.75;
+    margin: 0;
+    padding-inline: clamp(16px, 6vw, 90px);
+}
+
+.student-info {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+
+.greeting-intro {
+    padding: 96px 0 56px;
+}
+
+.greeting-intro h1 {
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+/* my hero image */
+
+.student-info > div {
+    margin-bottom: 96px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 32px 0 8px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    color: var(--text-main);
+}
+
+p + p {
+    margin-top: 18px;
+}
+
+.details {
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    border-radius: var(--radius-xl);
+    padding: 36px;
+    border: 1px solid var(--border-subtle);
+}
+
+.details h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+}
+
+.details p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin: 6px 0;
+}
+
+.description p {
+    max-width: 760px;
+}
+
+/*  homepage screenshots + D3.js visualization image */
+
+.competitive-analysis {
+    background: var(--bg-soft);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+}
+
+.competitive-analysis ul {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.competitive-analysis li {
+    margin-bottom: 10px;
+    color: var(--text-muted);
+}
+
+/* logo strip */
+
+.user-research p {
+    max-width: 760px;
+}
+
+.wireframes {
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    border: 1px solid var(--border-light);
+}
+
+/* Low & mid-fidelity wireframe images in grid */
+
+.problems {
+    background: var(--bg-soft);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+}
+
+.problems::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    bottom: 24px;
+    width: 4px;
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.problems h3 {
+    margin-top: 28px;
+}
+
+.design-system {
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    border: 1px solid var(--border-light);
+}
+
+/* color palette, typography, UI components */
+
+.reflection p {
+    max-width: 760px;
+}
+
+.reflection strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.student-info > div:not(:first-child)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--border-subtle);
+    margin-bottom: 72px;
+}
+
+@media (max-width: 768px) {
+    .greeting-intro {
+        padding: 72px 0 40px;
+    }
+
+    .details,
+    .wireframes,
+    .design-system,
+    .problems,
+    .competitive-analysis {
+        padding: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .student-info > div {
+        margin-bottom: 72px;
+    }
+}
