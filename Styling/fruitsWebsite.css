@@ -128,10 +128,6 @@ p + p {
 
 /* logo strip */
 
-.user-research p {
-    max-width: 760px;
-}
-
 .wireframes {
     background: var(--bg-card);
     border-radius: var(--radius-xl);
@@ -159,7 +155,6 @@ p + p {
     color: var(--text-main);
     line-height: 1.75;
 }
-
 
 .problems {
     background: var(--bg-soft);
@@ -207,6 +202,30 @@ p + p {
     height: 1px;
     background: var(--border-subtle);
     margin-bottom: 72px;
+}
+
+.user-research-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+    margin-bottom: 72px;
+}
+
+.user-research-text {
+    flex: 1; 
+    max-width: 600px;
+}
+
+.user-research-image {
+    flex: 0 0 600px;
+    margin-top: 16px;
+}
+
+.user-research-image img {
+    width: 100%; 
+    height: auto;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
 }
 
 .description-container {
