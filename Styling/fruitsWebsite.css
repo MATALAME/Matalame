@@ -9,7 +9,7 @@
     --text-muted: #6B7280;
     --text-light: #9CA3AF;
 
-    --accent: #004AAD;
+    --accent: #3D7341;
 
     --border-light: #E5E7EB;
     --border-subtle: #EEF2F7;
@@ -51,10 +51,11 @@ h2 {
 }
 
 .greeting-intro h1 {
-    font-size: clamp(36px, 5vw, 52px);
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.1;
+    margin-top: 0px;
 }
 
 /* my hero image */
@@ -85,23 +86,44 @@ p + p {
 }
 
 .details {
-    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
-    border-radius: var(--radius-xl);
-    padding: 36px;
-    border: 1px solid var(--border-subtle);
+    position: relative;
+    padding: 24px 32px;
+    background: transparent;
+    border-left: 1px solid var(--border-subtle);
+    margin-top: 0px;
 }
 
 .details h2 {
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
     color: var(--text-light);
+    margin-bottom: 12px;
 }
 
-.details p {
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-subtle);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span {
+    font-size: 13px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.detail-item strong {
     font-size: 15px;
-    color: var(--text-muted);
-    margin: 6px 0;
+    color: var(--text-main);
+    font-weight: 500;
 }
 
 .description p {
@@ -111,20 +133,30 @@ p + p {
 /*  homepage screenshots + D3.js visualization image */
 
 .competitive-analysis {
-    background: var(--bg-soft);
-    padding: 40px;
-    border-radius: var(--radius-lg);
+    background: #3D7341; 
+    color: #ffffff;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    padding: 80px clamp(16px, 6vw, 90px);
+}
+
+.competitive-analysis h2,
+.competitive-analysis h3,
+.competitive-analysis p,
+.competitive-analysis li {
+    color: #ffffff;
 }
 
 .competitive-analysis ul {
-    margin-top: 16px;
     padding-left: 20px;
 }
 
 .competitive-analysis li {
-    margin-bottom: 10px;
-    color: var(--text-muted);
+    opacity: 0.9;
 }
+
 
 /* logo strip */
 
@@ -178,12 +210,20 @@ p + p {
     margin-top: 28px;
 }
 
-.design-system {
+.hero-image{
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    margin-top: 32px;
+}
+
+/* .design-system {
     background: var(--bg-card);
     border-radius: var(--radius-xl);
     padding: 48px;
     border: 1px solid var(--border-light);
-}
+} */
 
 /* color palette, typography, UI components */
 
@@ -212,6 +252,7 @@ p + p {
 }
 
 .user-research-text {
+    margin-top: 30px;
     flex: 1; 
     max-width: 600px;
 }
@@ -222,7 +263,7 @@ p + p {
 }
 
 .user-research-image img {
-    width: 100%; 
+    width: 80%; 
     height: auto;
     border-radius: var(--radius-lg);
     object-fit: cover;
