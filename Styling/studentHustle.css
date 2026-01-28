@@ -41,3 +41,54 @@ body {
 h2 {
     color: var(--accent);
 }
+
+.details {
+    position: relative;
+    padding: 24px 32px;
+    background: transparent;
+    border-left: 1px solid var(--border-subtle);
+    margin-top: 0px;
+}
+
+.details h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-subtle);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span {
+    font-size: 13px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.detail-item strong {
+    font-size: 15px;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.student-intro {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.student-intro img {
+   max-width: 80%;
+}
