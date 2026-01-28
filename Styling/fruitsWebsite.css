@@ -46,11 +46,11 @@ h2 {
     padding-bottom: 140px;
 }
 
-.greeting-intro {
+.hero-intro {
     padding: 96px 0 56px;
 }
 
-.greeting-intro h1 {
+.hero-intro h1 {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: -0.03em;
@@ -234,8 +234,6 @@ p + p {
     align-self: center;
 }
 
-/* color palette, typography, UI components */
-
 .reflection-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -252,7 +250,6 @@ p + p {
     margin-bottom: 50px;
 }
 
-/* subtle accent line (matches your design language) */
 .reflection-card::before {
     content: "";
     position: absolute;
@@ -274,9 +271,8 @@ p + p {
     font-size: 15px;
 }
 
-/* Optional: visual distinction */
 .reflection-card.challenges::before {
-    background: #AE453B; /* berry red accent */
+    background: #AE453B; 
 }
 
 .student-info > div:not(:first-child)::before {
