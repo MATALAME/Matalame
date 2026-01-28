@@ -56,6 +56,7 @@ h2 {
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin-top: 0px;
+    text-align: center;
 }
 
 /* my hero image */
@@ -161,13 +162,17 @@ p + p {
 /* logo strip */
 
 .wireframes {
-    background: var(--bg-card);
-    border-radius: var(--radius-xl);
-    padding: 48px;
-    border: 1px solid var(--border-light);
+    background: #FFFFFF;
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    padding: 80px clamp(16px, 6vw, 90px);
+
     display: flex;
     flex-direction: column;
-    gap: 32px; 
+    gap: 24px;
 }
 
 .wireframes img {
@@ -189,6 +194,7 @@ p + p {
 }
 
 .problems {
+    margin-top: 50px;
     background: var(--bg-soft);
     border-radius: var(--radius-lg);
     padding: 40px;
@@ -218,22 +224,59 @@ p + p {
     margin-top: 32px;
 }
 
-/* .design-system {
-    background: var(--bg-card);
-    border-radius: var(--radius-xl);
-    padding: 48px;
-    border: 1px solid var(--border-light);
-} */
+.design-system img{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    object-fit: contain;
+    align-self: center;
+}
 
 /* color palette, typography, UI components */
 
-.reflection p {
-    max-width: 760px;
+.reflection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 32px;
 }
 
-.reflection strong {
-    color: var(--accent);
-    font-weight: 600;
+.reflection-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    border: 1px solid var(--border-light);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* subtle accent line (matches your design language) */
+.reflection-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 32px;
+    bottom: 32px;
+    width: 4px;
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.reflection-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.reflection-card p {
+    max-width: none;
+    font-size: 15px;
+}
+
+/* Optional: visual distinction */
+.reflection-card.challenges::before {
+    background: #AE453B; /* berry red accent */
 }
 
 .student-info > div:not(:first-child)::before {
