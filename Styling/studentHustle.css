@@ -157,25 +157,6 @@ h2 {
     border-bottom: 1px solid var(--border-subtle);
 }
 
-.persona-title {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 28px;
-}
-
-.persona-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-    display: grid;
-    place-items: center;
-}
-
 .persona-name {
     margin: 0;
     font-size: 22px;
@@ -195,13 +176,12 @@ h2 {
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px 20px; 
-    font-size: 15px; 
+    font-size: 16px; 
     margin-top: 20px; 
 } 
 
 .persona-meta li { 
     color: var(--text-muted); 
-
 } 
 
 .persona-meta strong { 
@@ -214,7 +194,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    background: var(--bg-soft);
+    /* background: var(--bg-soft); */
 }
 
 .persona-goals,
@@ -263,6 +243,10 @@ h2 {
     font-size: 14px;
     line-height: 1.65;
     color: var(--text-main);
+}
+.design-system img {
+    max-width: 100px;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
