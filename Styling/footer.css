@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.footer-wrapper {
+    padding: 80px 24px 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #000000;
+    backdrop-filter: blur(12px);
+    border-radius: 36px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.footer-left h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-tagline {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+.footer-email {
+    color: #388bf8;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-email:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 12px;
+}
+
+.footer-right a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-right a:hover {
+    color: #38bdf8;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 0.8rem;
+    color: #64748b;
+}
