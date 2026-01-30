@@ -295,7 +295,7 @@ h2 {
     }
 
     .description-image {
-        flex-direction: column;   /* 👈 stack images */
+        flex-direction: column;  
     }
 
     .description-image img {
