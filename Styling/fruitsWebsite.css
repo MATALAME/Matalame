@@ -332,6 +332,18 @@ p + p {
     object-fit: cover;
 }
 
+.add-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+
+.add-images img {
+    max-width: 45%;
+}
+
 @media (max-width: 768px) {
     .greeting-intro {
         padding: 72px 0 40px;
@@ -371,5 +383,9 @@ p + p {
     .wireframes p {
         font-size: 15px;
         margin-bottom: 16px;
+    }
+
+    .add-images {
+        flex-direction: column;
     }
 }

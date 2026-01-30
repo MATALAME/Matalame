@@ -41,6 +41,8 @@ body {
 h2 {
     color: var(--accent);
     margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .details {
@@ -94,8 +96,31 @@ h2 {
     width: 63%;
     height: auto;
     object-fit: cover;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
+
+.add-images img {
+    width: 63%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 120px;
+}
+
+.divider {
+    margin: 64px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.divider hr {
+    width: 100%;
+    max-width: 600px;
+    height: 4px;             
+    border: none;
+    background-color: #D1D5DB; 
+    opacity: 1;              
+}
+
 
 @media (max-width: 768px) {
     .hero-image, .add-images {
