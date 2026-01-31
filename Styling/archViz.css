@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg-main: #F4F4F4;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F8FAFC;
+
+    --text-main: #111827;
+    --text-muted: #6B7280;
+    --text-light: #9CA3AF;
+
+    --accent: #004AAD;
+
+    --border-light: #E5E7EB;
+    --border-subtle: #EEF2F7;
+
+    --radius-xl: 20px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.75;
+    margin: 0;
+    padding-inline: clamp(16px, 6vw, 90px);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.project-intro p{
+    text-align: center;
+}
+
+
+h2 {
+    color: var(--accent);
+    text-align: center;
+    font-size: 30px;
+}
+
+.details {
+    position: relative;
+    padding: 24px 32px;
+    background: transparent;
+    border-left: 1px solid var(--border-subtle);
+}
+
+.details h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-subtle);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.detail-item strong {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.description {
+    margin-bottom: 120px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 32px auto;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.3s;
+}
+
+.carousel button:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.carousel .prev {
+    left: 16px;
+}
+
+.carousel .next {
+    right: 16px;
+}
+
+.divider {
+    margin: 64px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.divider hr {
+    width: 100%;
+    max-width: 600px;
+    height: 4px;             
+    border: none;
+    background-color: #D1D5DB; 
+    opacity: 1;              
+}

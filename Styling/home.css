@@ -37,6 +37,10 @@ body {
     margin-bottom: 100px;
 }
 
+.introduction {
+    margin-bottom: 55px;
+}
+
 .introduction p {
     max-width: 650px;
     font-size: 30px;

@@ -38,16 +38,11 @@ body {
     padding-inline: clamp(16px, 6vw, 90px);
 }
 
-.project-intro p{
-    text-align: center;
-}
-
-
 h2 {
     color: var(--accent);
     margin-bottom: 40px;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .details {
@@ -104,6 +99,9 @@ h2 {
     margin-bottom: 30px;
 }
 
+.add-description {
+    margin-bottom: 70px;
+}
 .add-images img {
     width: 63%;
     height: auto;
