@@ -83,6 +83,10 @@ h2 {
     font-weight: 500;
 }
 
+.user-research{
+    margin-bottom: 60px;
+}
+
 .student-intro {
     text-align: center;
     margin-top: 30px;
@@ -126,6 +130,7 @@ h2 {
 
 .description-image img {
     max-width: 45%;
+    margin-bottom: 70px;
 }
 
 .wireframes {

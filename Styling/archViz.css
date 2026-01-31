@@ -41,10 +41,17 @@ h1 {
     text-align: center;
 }
 
+.subheading{
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .project-intro p{
     text-align: center;
 }
-
 
 h2 {
     color: var(--accent);
