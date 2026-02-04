@@ -6,6 +6,13 @@ body {
     padding-inline: clamp(16px, 6vw, 90px);
 }
 
+.resume-intro h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-align: center;
+}
+
 .about-me p{
     max-width: 65%;
 }
@@ -17,4 +24,80 @@ body {
     display: inline-block; 
     font-weight: 500;
     font-size: 16px;
+}
+
+.about-education {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin-block: 40px;
+}
+
+.about-me {
+    flex: 2;
+}
+
+.education {
+    flex: 1;
+}
+
+.about-me p {
+    max-width: 90%;
+}
+
+.additionals {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin-block: 40px;
+}
+
+.design-dev,
+.interests,
+.personal-skills,
+.tools {
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .about-education,
+    .additionals {
+        gap: 32px;
+    }
+
+    .about-me p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-education,
+    .additionals {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .resume-intro h1 {
+        margin-top: 24px;
+    }
+
+    .about-me p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-inline: 16px;
+    }
+
+    .about-me h2,
+    .education h2,
+    .interests h2,
+    .tools h2,
+    .design-dev h2,
+    .personal-skills h2 {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
 }
