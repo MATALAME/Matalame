@@ -344,6 +344,28 @@ p + p {
     max-width: 45%;
 }
 
+/* ANIMATIONS */
+
+.hero-intro h1,
+.hero-intro p,
+.hero-image {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-intro h1 { animation-delay: 0.1s; }
+.hero-intro p { animation-delay: 0.25s; }
+.hero-image { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 @media (max-width: 768px) {
     .greeting-intro {
         padding: 72px 0 40px;

@@ -57,6 +57,16 @@ body {
     display: inline-block; 
 }
 
+.intro-div {
+    display: flex;
+    gap: 100px;
+}
+
+.intro-div img {
+    width: 40%;
+    height: 40%;
+}
+
 .cta-btn {
     color: #ffffff;
     padding: 8px 8px 8px 12px; 
@@ -220,6 +230,71 @@ body {
     font-size: 14px;
     color: #555;
 }
+
+/* ANIMATIONS */
+
+.greeting-intro p,
+.greeting-intro h1,
+.greeting-intro h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.greeting-intro p { animation-delay: 0.1s; }
+.greeting-intro h1 { animation-delay: 0.25s; }
+.greeting-intro h2 { animation-delay: 0.4s; }
+
+/* LOWER CONTENT ANIMATIONS */
+
+.banner-container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.banner-container.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-content,
+.banner-image {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.banner-container:hover .banner-content,
+.banner-container:hover .banner-image {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.banner-image img {
+    transition: transform 0.4s ease;
+}
+
+.banner-container:hover .banner-image img {
+    transform: scale(1.03);
+}
+
+.standard-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(134, 179, 253, 0.3);
+}
+
+.standard-btn:hover .small-circle {
+    transform: translateX(4px);
+}
+
+
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width: 1024px) {
     .banner-container {
