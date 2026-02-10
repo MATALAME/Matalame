@@ -187,8 +187,8 @@ h2 {
 }
 
 .persona {
-    /* background: var(--bg-card); */
-    /* border: 1px solid var(--border-light); */
+    background: #eeeeee;
+    border: 1px solid grey; 
     border-radius: var(--radius-xl);
     overflow: hidden;
     max-width: 950px;

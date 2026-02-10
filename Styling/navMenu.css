@@ -8,6 +8,15 @@
     text-decoration: none;
 }
 
+.logo {
+    position: absolute;
+    left: 0;
+    margin-left: 100px; 
+    width: 90px;
+    height: auto;
+}
+
+
 header {
     display: flex;
     justify-content: center; 
