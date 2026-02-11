@@ -163,3 +163,99 @@ h2 {
     background-color: #D1D5DB; 
     opacity: 1;              
 }
+
+@media (max-width: 768px) {
+    body {
+        padding-inline: clamp(16px, 4vw, 40px);
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .subheading {
+        font-size: 16px;
+        margin-top: -20px;
+    }
+
+    .details {
+        padding: 20px 24px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .detail-item span {
+        font-size: 12px;
+    }
+
+    .detail-item strong {
+        font-size: 14px;
+    }
+
+    .description {
+        margin-bottom: 80px;
+    }
+
+    .carousel {
+        max-width: 100%;
+        margin: 24px auto;
+    }
+
+    .carousel button {
+        font-size: 20px;
+        padding: 14px; 
+    }
+
+    .divider {
+        margin: 48px 0;
+    }
+
+    .divider hr {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .subheading {
+        font-size: 14px;
+        margin-top: -15px;
+    }
+
+    .details {
+        padding: 16px 16px;
+    }
+
+    .detail-item {
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+
+    .detail-item strong {
+        font-size: 13px;
+    }
+
+    .description {
+        margin-bottom: 60px;
+    }
+
+    .carousel button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .divider {
+        margin: 36px 0;
+    }
+}

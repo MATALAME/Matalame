@@ -38,11 +38,20 @@ body {
     padding-inline: clamp(16px, 6vw, 90px);
 }
 
+
 h2 {
     color: var(--accent);
     margin-bottom: 40px;
     text-align: center;
     font-size: 30px;
+}
+
+.subheading{
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-top: -25px;
+    margin-bottom: 0px;
 }
 
 .details {
@@ -83,17 +92,20 @@ h2 {
     font-weight: 500;
 }
 
-.hero-image, .add-images{
-    width: 100%;
+.hero-image,
+.add-images {
     display: flex;
-    height: auto;
-    object-fit: cover;
-    max-width: 1000px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 100%;
     margin-top: 32px;
 }
 
-.hero-image img, .add-images img {
-    width: 63%;
+.hero-image img,
+.add-images img {
+    width: 100%; 
+    max-width: 630px; 
     height: auto;
     object-fit: cover;
     margin-bottom: 30px;
@@ -102,12 +114,7 @@ h2 {
 .add-description {
     margin-bottom: 70px;
 }
-.add-images img {
-    width: 63%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 120px;
-}
+
 
 .divider {
     margin: 64px 0;
@@ -124,36 +131,75 @@ h2 {
     opacity: 1;              
 }
 
-@media (max-width: 480px) {
+/* Existing CSS above remains unchanged */
 
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets: 768px and below */
+@media (max-width: 768px) {
     body {
-        padding-inline: 16px;
+        padding-inline: clamp(16px, 4vw, 40px);
     }
 
-    .persona-name {
-        font-size: 18px;
+    h2 {
+        font-size: 26px;
+        margin-bottom: 32px;
     }
 
-    .persona-details h3 {
-        font-size: 12px;
+    .details {
+        padding: 20px 24px;
     }
 
-    .persona-details li {
-        font-size: 13px;
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 
-    .problems {
-        padding: 20px;
-    }
-
-    .student-intro {
-        margin-top: 20px;
-    }
-
-    .reflection {
-        margin-bottom: 60px;
+    .hero-image img,
+    .add-images img {
+        max-width: 100%;
     }
 }
 
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
 
+    .details {
+        padding: 16px 16px;
+    }
 
+    .detail-item {
+        font-size: 12px;
+    }
+
+    .detail-item strong {
+        font-size: 14px;
+    }
+
+    .hero-image,
+    .add-images {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .hero-image img,
+    .add-images img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .divider {
+        margin: 48px 0;
+    }
+
+    .divider hr {
+        max-width: 100%;
+    }
+}
