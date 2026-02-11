@@ -335,7 +335,8 @@ p + p {
 
 .hero-intro h1,
 .hero-intro p,
-.hero-image {
+.hero-image,
+.details {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.8s ease forwards;
@@ -344,6 +345,7 @@ p + p {
 .hero-intro h1 { animation-delay: 0.1s; }
 .hero-intro p { animation-delay: 0.25s; }
 .hero-image { animation-delay: 0.4s; }
+.details { animation-delay: 0.4s; }
 
 @keyframes fadeUp {
     to {
@@ -353,48 +355,119 @@ p + p {
 }
 
 
-@media (max-width: 768px) {
-    .greeting-intro {
-        padding: 72px 0 40px;
+@media (max-width: 1024px) {
+
+    body {
+        padding-inline: 40px;
     }
 
-    .details,
-    .wireframes,
-    .design-system,
-    .problems,
-    .competitive-analysis {
-        padding: 28px;
+    .hero-intro h1 {
+        font-size: 34px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
-    .student-info > div {
-        margin-bottom: 72px;
+    .reflection-grid {
+        grid-template-columns: 1fr; 
     }
 
+    .user-research-container,
     .description-container {
         flex-direction: column;
         gap: 24px;
     }
 
+    .user-research-image,
     .description-image {
         flex: none;
         width: 100%;
     }
 
-    .wireframes {
-        padding: 28px;
-        gap: 16px;
+    .user-research-image img {
+        width: 100%;
     }
 
-    .wireframes p {
+    .add-images img {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-inline: 20px;
+    }
+
+    .hero-intro {
+        margin-top: 24px;
+    }
+
+    .hero-intro h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
         font-size: 15px;
-        margin-bottom: 16px;
+    }
+
+    .details {
+        padding: 20px;
+        border-left: none;
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .problems {
+        padding: 24px;
+    }
+
+    .reflection-card {
+        padding: 24px;
+    }
+
+    .competitive-analysis,
+    .wireframes {
+        padding: 60px 20px;
     }
 
     .add-images {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .add-images img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-intro h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .competitive-analysis,
+    .wireframes {
+        padding: 40px 16px;
     }
 }

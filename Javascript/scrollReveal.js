@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll(
-    ".banner-container, .stack-item, .introduction, .stack-info"
+    ".banner-container, .stack-item, .introduction, .stack-info, .games-intro, .details, .persona, .wireframe-item, .visual-images img"
 );
 
 const observer = new IntersectionObserver(

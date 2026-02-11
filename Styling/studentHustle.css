@@ -90,7 +90,7 @@ h2 {
 .student-intro {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .student-intro img {
@@ -275,14 +275,42 @@ h2 {
     margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
-    .persona-header,
-    .persona-details {
-        padding: 28px 24px;
+/* ANIMATIONS */
+
+.student-intro h1,
+.student-intro p,
+.student-intro,
+.details {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.student-intro h1 { animation-delay: 0.1s; }
+.student-intro p { animation-delay: 0.25s; }
+.student-intro { animation-delay: 0.4s; }
+.details { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        padding-inline: 40px;
+    }
+
+    .personas {
+        grid-template-columns: 1fr; 
+        gap: 40px;
     }
 
     .persona-details {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .persona-behaviours,
@@ -291,19 +319,109 @@ h2 {
     }
 
     .persona-meta {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 20px;
     }
 
-    .personas {
-        grid-template-columns: 1fr; 
-        gap: 32px;
+    .description-image img {
+        max-width: 48%;
+    }
+
+    .wireframes img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-inline: 20px;
+    }
+
+    .details {
+        padding: 20px;
+        border-left: none;
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .problems {
+        padding: 24px;
     }
 
     .description-image {
-        flex-direction: column;  
+        flex-direction: column;
+        align-items: center;
     }
 
     .description-image img {
         max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .persona-header {
+        padding: 24px;
+    }
+
+    .persona-details {
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .persona-meta {
+        grid-template-columns: 1fr;
+        font-size: 14px;
+    }
+
+    .persona-name {
+        font-size: 20px;
+    }
+
+    .persona-goals,
+    .persona-frustrations,
+    .persona-behaviours,
+    .persona-story {
+        padding: 18px;
+        min-height: auto;
+    }
+
+    .student-intro img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding-inline: 16px;
+    }
+
+    .persona-name {
+        font-size: 18px;
+    }
+
+    .persona-details h3 {
+        font-size: 12px;
+    }
+
+    .persona-details li {
+        font-size: 13px;
+    }
+
+    .problems {
+        padding: 20px;
+    }
+
+    .student-intro {
+        margin-top: 20px;
+    }
+
+    .reflection {
+        margin-bottom: 60px;
     }
 }

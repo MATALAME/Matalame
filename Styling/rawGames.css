@@ -332,6 +332,29 @@ h2 {
     object-fit: cover;
 }
 
+/* ANIMATIONS */
+
+.games-intro h1,
+.games-intro p,
+.hero-age,
+.details {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.games-intro h1 { animation-delay: 0.1s; }
+.games-intro p { animation-delay: 0.25s; }
+.hero-image { animation-delay: 0.4s; }
+.details { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     .wireframe-item {
         flex-direction: column; 

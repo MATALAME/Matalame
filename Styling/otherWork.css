@@ -124,14 +124,36 @@ h2 {
     opacity: 1;              
 }
 
+@media (max-width: 480px) {
 
-@media (max-width: 768px) {
-    .hero-image, .add-images {
-        flex-direction: column;
-        align-items: center;
+    body {
+        padding-inline: 16px;
     }
 
-    .hero-image img, .add-images img {
-        width: 100%;
+    .persona-name {
+        font-size: 18px;
+    }
+
+    .persona-details h3 {
+        font-size: 12px;
+    }
+
+    .persona-details li {
+        font-size: 13px;
+    }
+
+    .problems {
+        padding: 20px;
+    }
+
+    .student-intro {
+        margin-top: 20px;
+    }
+
+    .reflection {
+        margin-bottom: 60px;
     }
 }
+
+
+

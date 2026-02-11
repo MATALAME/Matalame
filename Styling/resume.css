@@ -11,6 +11,7 @@ body {
     font-weight: 700;
     margin-top: 40px;
     text-align: center;
+    color: #004AAD;
 }
 
 .about-me p{
@@ -63,6 +64,61 @@ body {
 .tools {
     flex: 1;
 }
+
+/* ANIMATION */
+/* Base animation setup */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply hidden state first */
+.resume-intro h1,
+.about-me,
+.education,
+.design-dev,
+.interests,
+.personal-skills,
+.tools {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.resume-intro h1 {
+    animation-delay: 0.1s;
+}
+
+.about-me {
+    animation-delay: 0.3s;
+}
+
+.education {
+    animation-delay: 0.5s;
+}
+
+.design-dev {
+    animation-delay: 0.7s;
+}
+
+.interests {
+    animation-delay: 0.9s;
+}
+
+.personal-skills {
+    animation-delay: 1.1s;
+}
+
+.tools {
+    animation-delay: 1.3s;
+}
+
+
 
 @media (max-width: 1024px) {
     .about-education,
