@@ -33,6 +33,11 @@ body {
     margin-block: 40px;
 }
 
+.education img{
+    max-width: 15%;
+    max-height: 15%;
+}
+
 .about-me {
     flex: 2;
 }

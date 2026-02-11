@@ -129,7 +129,7 @@ h2 {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    padding: 100px clamp(16px, 6vw, 90px);
+    padding: 50px clamp(16px, 6vw, 90px);
 }
 
 .app-objective {
@@ -140,7 +140,7 @@ h2 {
 }
 
 .app-objective-text {
-    max-width: 560px;
+    max-width: 800px;
     color: #fff;
 }
 
@@ -174,7 +174,7 @@ h2 {
 }
 
 .app-objective-image img {
-    max-width: 460px;
+    max-width: 480px;
     width: 100%;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
 }
@@ -206,7 +206,7 @@ h2 {
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 

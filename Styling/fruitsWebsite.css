@@ -121,7 +121,7 @@ p + p {
 /*  homepage screenshots + D3.js visualization image */
 
 .competitive-analysis {
-    background: #3D7341; 
+    background: #dedede; 
     color: #ffffff;
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -134,7 +134,7 @@ p + p {
 .competitive-analysis h3,
 .competitive-analysis p,
 .competitive-analysis li {
-    color: #ffffff;
+    color: #000000;
 }
 
 .competitive-analysis ul {

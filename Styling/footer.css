@@ -18,10 +18,15 @@
     margin-top: 50px;
 }
 
-/* .footer-left img{
-    max-width: 15%;
+.footer-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.footer-right img{
+    max-width: 10%;
     margin-bottom: 0px;
-} */
+} 
 
 .footer-left h3 {
     font-size: 25px;
@@ -76,6 +81,7 @@
     margin-top: 32px;
     font-size: 0.8rem;
     color: #64748b;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {
