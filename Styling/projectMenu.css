@@ -34,6 +34,21 @@ body {
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
+.project-heading{
+    text-align: center;
+}
+
+.project-heading h2{
+    color: #004AAD;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #004AAD;
+    border-radius: 30px;
+    padding: 8px 12px;  
+    display: inline-block;
+}
+
 .project-info {
     margin-top: 70px;
     margin-bottom: 0px;

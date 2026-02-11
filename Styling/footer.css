@@ -15,12 +15,19 @@
     display: flex;
     justify-content: space-between;
     gap: 48px;
+    margin-top: 50px;
 }
+
+/* .footer-left img{
+    max-width: 15%;
+    margin-bottom: 0px;
+} */
 
 .footer-left h3 {
     font-size: 25px;
     color: #1f284e;
     margin-bottom: 12px;
+    margin-top: 0px;
 }
 
 .footer-tagline {

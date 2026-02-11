@@ -55,7 +55,6 @@ h2 {
 .games-info {
     max-width: 1100px;
     margin: 0 auto;
-    padding-bottom: 140px;
 }
 
 .games-info > div,
@@ -322,6 +321,7 @@ h2 {
 
 .more-visuals {
     margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .visual-images img{

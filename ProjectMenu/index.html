@@ -21,6 +21,7 @@
     <link rel = "stylesheet" href = "../Styling/navMenu.css">
     <link rel = "stylesheet" href = "../Styling/projectMenu.css">
     <link rel = "stylesheet" href = "../Styling/footer.css">
+    <link rel = "stylesheet" href = "../Styling/backTotop.css">
 
 </head>
 
@@ -41,12 +42,15 @@
         </div> 
     </section>
 
-    <section class="project-banners">
 
+    <section class="project-banners">
+        <div class= "project-heading"> 
+            <h2>Main Projects</h2>
+        </div>
     <!-- Fruit-Themed E-Commerce -->
     <div class="banner-container">
         <div class="banner-content">
-            <h3>Fruit-Themed E-Commerce Platform</h3>
+            <h3>Fruits.Co Website</h3>
             <p>
                 A themed e-commerce website for purchasing fruit-based diet plans,
                 featuring public APIs, customer testimonials, and D3.js data
@@ -67,7 +71,7 @@
     <!-- Gaming E-Commerce -->
     <div class="banner-container">
         <div class="banner-content">
-            <h3>Gaming E-Commerce Website</h3>
+            <h3>Raw Games Web App</h3>
             <p>
                 A gaming-focused platform using real API data to display titles,
                 simulated pricing, and filters for a smooth browsing experience.
@@ -87,7 +91,7 @@
     <!-- Student Job Marketplace -->
     <div class="banner-container">
         <div class="banner-content">
-            <h3>Student Job Marketplace (React App)</h3>
+            <h3>Student Hustle Platform</h3>
             <p>
                 A React-based platform connecting university and college students
                 with flexible short-term work opportunities in the South African context.
@@ -102,6 +106,10 @@
         <div class="banner-image">
             <img src="../Images/StudentHustleBanner.png" alt="Student job marketplace project">
         </div>
+    </div>
+
+    <div class= "project-heading"> 
+        <h2>Additional Concepts</h2>
     </div>
 
     <!-- UI/UX Collection -->
@@ -122,6 +130,10 @@
         <div class="banner-image">
             <img src="../Images/ConceptsBanner.png" alt="UI/UX design projects">
         </div>
+    </div>
+
+    <div class= "project-heading"> 
+        <h2>Extended Skill Set</h2>
     </div>
 
     <!-- Packaging Design -->
@@ -165,26 +177,15 @@
 </section>
 </main>
 
- <footer class="footer-wrapper">
-    <div class="footer-card">
-        <div class="footer-left">
-            <h3>Let's Connect!</h3>
-            <p class="footer-tagline">
-                Web developer | UI/UX Designer | 3D Visualization Artist
-            </p>
-
-            <a href="mailto:matalamemamabolo@gmail.com" class="footer-email">
-                mamabolomatalame@gmail.com
-            </a>
-        </div>
-
-        <div class="footer-right">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/matalame-mamabolo-682b63214/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/matalame_/" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
+    <div class="BacktoTop">
+        <button id="TopBtn">⬆</button>
     </div>
+
+    <script src = "../Javascript/backTotop.js"></script>
+
+    <footer id="footerItem"></footer>
+    </footer>
+    <script src = "../Javascript/footer.js"></script>
 
     <p class="footer-copy">
         &copy; 2026 Matalame Mamabolo. All rights reserved.
