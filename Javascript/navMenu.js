@@ -1,10 +1,11 @@
-const root = "";
-
+const basePath = window.location.hostname.includes("github.io")
+    ? "/Matalame"
+    : "";
 
 const menuItems = [
-    { name: "Home", href: "/index.html" },
-    { name: "Projects", href: "/ProjectMenu/index.html" },
-    { name: "Resume", href: "/Resume/index.html" },
+    { name: "Home", href: `${basePath}/index.html` },
+    { name: "Projects", href: `${basePath}/ProjectMenu/index.html` },
+    { name: "Resume", href: `${basePath}/Resume/index.html` },
 ];
 
 export function initialise(currentPage) {
