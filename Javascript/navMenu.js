@@ -1,12 +1,11 @@
-const root = window.location.origin;
+const root = "";
+
 
 const menuItems = [
-    { name: "Home", href: root + "/index.html"},
-    { name: "Projects", href: `${root}/ProjectMenu/index.html` },
-    { name: "Resume", href: `${root}/Resume/index.html` },
-    //{ name: "Contact", href: `${root}/Contact/index.html` },
+    { name: "Home", href: "/index.html" },
+    { name: "Projects", href: "/ProjectMenu/index.html" },
+    { name: "Resume", href: "/Resume/index.html" },
 ];
-
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
