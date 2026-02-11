@@ -109,6 +109,8 @@ h2 {
     border-radius: var(--radius-md);
     background-color: var(--bg-card);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    aspect-ratio: 16 / 9;   /* 🔥 This stabilizes everything */
 }
 
 .carousel-images {
@@ -118,8 +120,10 @@ h2 {
 
 .carousel-images img {
     width: 100%;
+    height: 100%;          /* important */
     flex-shrink: 0;
     object-fit: cover;
+    display: block;
 }
 
 .carousel button {
