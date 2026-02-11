@@ -131,11 +131,6 @@ h2 {
     opacity: 1;              
 }
 
-/* Existing CSS above remains unchanged */
-
-/* ====== MEDIA QUERIES ====== */
-
-/* Tablets: 768px and below */
 @media (max-width: 768px) {
     body {
         padding-inline: clamp(16px, 4vw, 40px);
@@ -162,7 +157,6 @@ h2 {
     }
 }
 
-/* Mobile: 480px and below */
 @media (max-width: 480px) {
     h2 {
         font-size: 22px;
