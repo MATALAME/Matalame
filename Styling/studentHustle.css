@@ -137,9 +137,16 @@ h2 {
     margin-bottom: 80px;
 }
 
+.wireframe-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .wireframes img {
-    max-width: 80%;
-    align-content: center;
+    width: 45%;
+    height: auto;
 }
 
 .personas {
@@ -393,6 +400,15 @@ h2 {
     .student-intro img {
         max-width: 100%;
     }
+
+    .wireframe-div {
+        flex-direction: column;
+        align-items: center; /* keeps them centered */
+    }
+
+    .wireframes img {
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -423,5 +439,14 @@ h2 {
 
     .reflection {
         margin-bottom: 60px;
+    }
+
+    .wireframe-div {
+        flex-direction: column;
+        align-items: center; /* keeps them centered */
+    }
+
+    .wireframes img {
+        width: 90%;
     }
 }

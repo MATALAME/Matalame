@@ -203,8 +203,16 @@ p + p {
     margin-top: 28px;
 }
 
-.hero-image{
-    width: 100%;
+.hero-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 48%;
     height: auto;
     border-radius: var(--radius-lg);
     object-fit: cover;
@@ -392,6 +400,10 @@ p + p {
     .add-images img {
         max-width: 48%;
     }
+
+    .hero-image {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -448,6 +460,10 @@ p + p {
     .add-images img {
         max-width: 100%;
     }
+
+    .hero-image {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -469,5 +485,9 @@ p + p {
     .competitive-analysis,
     .wireframes {
         padding: 40px 16px;
+    }
+    
+    .hero-image {
+        max-width: 100%;
     }
 }

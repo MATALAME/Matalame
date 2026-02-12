@@ -316,23 +316,17 @@ h2 {
 
 .visual-images {
     display: flex;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;
     gap: 20px;
-    margin-top: 20px;
+}
 
+.visual-images img {
+    width: calc(50% - 10px);
 }
 
 .more-visuals {
     margin-top: 50px;
     margin-bottom: 0px;
-}
-
-.visual-images img{
-    flex: 1 1 calc(50% - 10px);  
-    max-width: calc(50% - 10px);
-    height: auto;
-    border-radius: var(--radius-md);
-    object-fit: cover;
 }
 
 /* ANIMATIONS */
@@ -380,5 +374,15 @@ h2 {
 
     .app-objective-text li::before {
         display: none;
+    }
+
+    .visual-images img {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 24px;
     }
 }

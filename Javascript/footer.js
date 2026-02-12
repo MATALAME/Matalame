@@ -20,5 +20,7 @@ window.onload = function() {
             </ul>
         </div>
     </div>
+
+    <p class="footer-copy"> &copy; 2026 Matalame Mamabolo. All rights reserved.</p>
     `;
   };
