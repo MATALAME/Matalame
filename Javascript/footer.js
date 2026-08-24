@@ -5,7 +5,7 @@ window.onload = function() {
         <div class="footer-left">
             <h3>Let's Connect!</h3>
             <p class="footer-tagline">
-                Web developer | UI/UX Designer | 3D Visualization Artist
+                Front end developer | UI/UX Designer | 3D Visualization Artist
             </p>
 
             <a href="mailto:matalamemamabolo@gmail.com" class="footer-email">
